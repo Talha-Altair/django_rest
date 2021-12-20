@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    '0.0.0.0'
+    '0.0.0.0',
+    '127.0.0.1',
 ]
 
 
@@ -127,3 +128,11 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+POSTGRES = {
+    'user': 'postgres',
+    'password': 'postgres',
+    'host': 'localhost',
+    'port': '5432',
+    'database': 'postgres',
+}
