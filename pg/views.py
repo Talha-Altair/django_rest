@@ -6,7 +6,9 @@ import json
 
 def index(request):
 
-    nums = ['one', 'two', 'three', 'four', 'five']
+    time = request.headers.get('time', 'default')
+
+    nums = ['one', 'two', 'three', 'four', 'five', time]
 
     data = {"names" : nums}
 
